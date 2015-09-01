@@ -128,7 +128,7 @@ case class LdaTrainResult(topicsGivenDoc: FrameEntity, wordGivenTopics: FrameEnt
 /**
  * Arguments to the LDA predict plugin - see user docs for more on the parameters
  */
-case class LdaModelPredictArgs(@ArgDoc("""Reference to the model for which topics are to be determined.""") model: ModelReference,
+case class LdaModelPredictArgs(model: ModelReference,
                                @ArgDoc("""Document whose topics are to be predicted. """) document: List[String])
 
 /**
